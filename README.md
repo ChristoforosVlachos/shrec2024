@@ -26,6 +26,8 @@ The ground truth is manually added based on the motions we have captured. The mo
 This is a short description of how you may use the executable code for training/inference.
 
 ### Training
+**DEPENDENCIES**: pytorch, tqdm
+
 Run:
 
 ```shell
@@ -59,14 +61,14 @@ data_path
 
 Running `training.py` will create a directory `checkpoints` inside the current working directory and save the model's state dictionary for each epoch in the format `epoch_i.pt`. You will need to keep one of these files for inference.
 
-PLEASE NOTE: `training.py` is dependent on `tqdm` being installed.
-
 *Usage example:*
 ```shell
 python training.py "Data Split" 1000
 ```
 
 ### Inference
+**DEPENDENCIES**: pytorch
+
 Run:
 
 ```shell
